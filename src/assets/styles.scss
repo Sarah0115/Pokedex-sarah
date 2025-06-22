@@ -1,0 +1,45 @@
+$primary-color: #F22539;
+$secondary-color: #BFBFBF;
+$primary-dark: #C00E20;
+$text-color: #353535;
+$background-color: #f9f9f9;
+$white: #FFFFFF;
+$light-gray: #E8E8E8;
+
+$font: "Lato", sans-serif;
+$font-bold: 700;
+$font-medium: 400;
+
+body{
+    $background-color: #E5E5E5;
+}
+.button-base{
+  color: white;
+  font-size:18px;
+  padding: 20px 11px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+}
+.button-primary{
+  background-color: $primary-color;
+}
+.button-primary:hover {
+    background-color: $primary-dark;
+}
+.secondary-button{
+    background-color: $secondary-color;
+}
+.favorite-button{
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: transparent;
+    background-image: url('@/assets/img/starGray.svg');
+    cursor: pointer;
+     &.isFav {
+    background-image: url('@/assets/img/starFilled.svg');
+  }
+}
+
