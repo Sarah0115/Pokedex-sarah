@@ -53,16 +53,15 @@ export default {
   display: flex;
   align-items: center;
   background-color: $white;
-  padding: 15px;
+  padding: 0 15px;
   color: $secondary-color;
-
+  height: 50px;
   &__icon {
     margin-right: 10px;
   }
 
   &__input {
     width: 100%;
-    padding: 10px;
     margin: 10px 0;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -88,5 +87,9 @@ export default {
     font-size: 16px;
     margin-left: 10px;
   }
+}
+@media (max-width: 600px){
+    
+
 }
 </style>

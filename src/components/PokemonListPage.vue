@@ -149,31 +149,46 @@ export default {
   }
 
   &__pokemon-list {
-    gap: 10px;
     padding-bottom: 90px;
   }
 
   &__pokemon-card {
+    font-size:22px;
+    height:60px;
     background-color: $white;
     text-transform: capitalize;
     color: $text-color;
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: 0px 20px;
+    margin: 10px 0;
     border-radius: 8px;
     cursor: pointer;
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-weight: $font-medium;
 
-    h3 {
-      margin: 0.5rem 0;
-    }
+  
   }
 
   &__no-results-container {
     text-align: center;
     margin-top: 50px;
     color: #888;
+  }
+}
+
+@media (max-width: 600px){
+  .pokemon-list-page {
+    position: relative;
+    padding: 0 30px;
+    font-family: $font;
+
+    &__container {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 }
 </style>

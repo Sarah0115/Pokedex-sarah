@@ -12,6 +12,7 @@ $font-medium: 400;
 
 body{
     $background-color: #E5E5E5;
+    width: 100vw;
 }
 .button-base{
   color: white;
@@ -43,3 +44,7 @@ body{
   }
 }
 
+@media (max-width: 600px){
+
+
+}

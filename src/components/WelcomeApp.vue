@@ -43,5 +43,11 @@ export default {
 
  
 }
-
+@media (max-width: 600px){
+  .welcome{
+    max-width: 100%;
+    width: 100%;
+    padding: 50px 0;
+  }
+}
 </style>

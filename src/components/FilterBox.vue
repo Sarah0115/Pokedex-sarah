@@ -1,6 +1,6 @@
 <template>
-  <div class="Pokedex-favoritesBox">
-    <div class="Pokedex-favoritesBox__container">
+  <div class="Pokedex-favorites">
+    <div class="Pokedex-favorites__container">
     <button @click="toggleShowAll" :disabled="!showOnlyFavorites" class="button-base">
       <img src="../assets/img/list.svg"/>
       All
@@ -35,7 +35,7 @@ export default {
 <style scoped lang="scss">
 @import '@/assets/styles.scss';
 
-.Pokedex-favoritesBox {
+.Pokedex-favorites {
   position: fixed;
   height: 80px;
   bottom: 0px;
@@ -75,5 +75,16 @@ button:disabled {
 button:hover:not(:disabled) {
  
   background-color: $secondary-color;
+}
+@media (max-width: 600px){
+    .Pokedex-favorites {
+      .Pokedex-favorites__container{
+        padding: 18px 30px;
+        button{
+          max-width: 150px;
+        }
+      }
+    }
+
 }
 </style>
